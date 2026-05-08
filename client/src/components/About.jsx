@@ -46,7 +46,7 @@ function About() {
               </div>
             </div>
             <a
-              href="https://sameer2028.github.io/Portfolio/resume2ndyear.pdf"
+              href="https://drive.google.com/file/d/1s3Ha-yN9rKkHG6bSyJpKbBow0gPvcS3k/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               className="inline-flex mt-8 w-fit items-center justify-center rounded-full bg-cyan-500 px-8 py-3 text-sm font-bold text-white dark:text-neutral-950 hover:bg-cyan-600 dark:hover:bg-cyan-400 transition-all hover:scale-105 shadow-sm"
