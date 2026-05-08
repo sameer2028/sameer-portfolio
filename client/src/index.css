@@ -1,10 +1,13 @@
 @import "tailwindcss";
+/* This is the magic line that fixes Dark Mode for v4 */
+@variant dark (&:where(.dark, .dark *));
 
 html {
   /* This makes the navigation feel premium */
   scroll-behavior: smooth;
   scroll-padding-top: 0px; /* Adjust this to match your navbar height */
 }
+
 section {
   scroll-margin-top: 50px; 
 }

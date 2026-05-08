@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Profiles from './components/Profiles';
+import Footer from './components/Footer'; // Adjust path if needed
 
 // We create a single "Landing Page" component that stacks everything
 const LandingPage = () => (
@@ -15,12 +16,13 @@ const LandingPage = () => (
     <Projects />
     <Profiles />
     <Contact />
+    <Footer />
   </main>
 );
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-white font-sans selection:bg-cyan-500/30">
+   <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-white transition-colors duration-500">
       <Navbar />
       <Routes>
         {/* The main "/" route now scrolls through everything */}
@@ -32,7 +34,7 @@ function App() {
         <Route path="/profiles" element={<Profiles />} /> 
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </main>
   )
 }
 

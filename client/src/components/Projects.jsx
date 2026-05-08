@@ -2,53 +2,53 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   const projects = [
-    { 
-      title: 'URL Shortening Service', 
-      desc: 'A high-performance URL shortener built for system reliability. Features optimized database indexing and custom REST APIs for rapid, scalable data retrieval.', 
-      tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose'], 
-      emoji: '🔗', 
-      github: 'https://github.com/sameer2028',
-      live: '#' // Replace with your live deployment link
-    },
-    { 
-      title: 'Student Management System', 
-      desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
-      tags: ['Java', 'MySQL', 'JDBC'], 
-      emoji: '🎓', 
-      github: 'https://github.com/sameer2028',
-      live: '#' 
-    },
+    // { 
+    //   title: 'URL Shortening Service', 
+    //   desc: 'A high-performance URL shortener built for system reliability. Features optimized database indexing and custom REST APIs for rapid, scalable data retrieval.', 
+    //   tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose'], 
+    //   emoji: '🔗', 
+    //   github: 'https://github.com/sameer2028',
+    //   live: '#' 
+    // },
+    // { 
+    //   title: 'Student Management System', 
+    //   desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
+    //   tags: ['Java', 'MySQL', 'JDBC'], 
+    //   emoji: '🎓', 
+    //   github: 'https://github.com/sameer2028',
+    //   live: '#' 
+    // },
     { 
       title: 'EMI Calculator', 
       desc: 'A dynamic financial utility tool that calculates Equated Monthly Installments for loans. Features real-time interest breakdowns and amortization schedules.', 
       tags: ['JavaScript', 'React', 'Tailwind CSS'], 
       emoji: '💳', 
-      github: 'https://github.com/sameer2028',
-      live: '#' 
+      github: 'https://github.com/sameer2028/EMI-calculator',
+      live: 'https://sameer2028.github.io/EMI-calculator/' 
     },
     { 
       title: 'Leetmetric', 
       desc: 'A tool to track and visualize LeetCode problem-solving statistics and progress over time.', 
       tags: ['JavaScript', 'API', 'Data Viz'], 
       emoji: '📊', 
-      github: 'https://github.com/sameer2028',
-      live: '#' 
+      github: 'https://github.com/sameer2028/LeetMetric',
+      live: 'https://sameer2028.github.io/LeetMetric/' 
     },
-    { 
-      title: 'Currency Converter', 
-      desc: 'Real-time currency conversion app using live exchange rate APIs with a polished interface.', 
-      tags: ['JavaScript', 'REST API', 'CSS'], 
-      emoji: '💱', 
-      github: 'https://github.com/sameer2028',
-      live: '#' 
-    },
+    // { 
+    //   title: 'Currency Converter', 
+    //   desc: 'Real-time currency conversion app using live exchange rate APIs with a polished interface.', 
+    //   tags: ['JavaScript', 'REST API', 'CSS'], 
+    //   emoji: '💱', 
+    //   github: 'https://github.com/sameer2028',
+    //   live: '#' 
+    // },
     { 
       title: 'Calculator', 
       desc: 'A clean, functional calculator built with vanilla JavaScript featuring smooth UI interactions.', 
       tags: ['HTML', 'CSS', 'JS'], 
       emoji: '🧮', 
-      github: 'https://github.com/sameer2028',
-      live: '#' 
+      github: 'https://github.com/sameer2028/Calculator',
+      live: ' https://sameer2028.github.io/Calculator/' 
     }
   ];
 
@@ -66,27 +66,33 @@ function Projects() {
   }
 
   return (
-    <section id="portfolio" className="px-6 py-25 bg-neutral-950 text-white">
+    // Section ka tag App.jsx ke global styling par chalega, isliye koi color classes nahi hain
+    <section id="portfolio" className="px-6 py-25">
       <div className="mx-auto max-w-7xl">
         
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 border-b border-neutral-800 pb-8">
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 border-b border-neutral-200 dark:border-neutral-800 pb-8 transition-colors duration-500">
           <div>
-            <h2 className="text-4xl font-bold md:text-5xl mb-4">
+            <h2 className="text-4xl font-bold md:text-5xl mb-4 text-neutral-900 dark:text-white transition-colors duration-500">
               Selected <span className="text-cyan-500">Work</span>
             </h2>
-            <p className="text-neutral-400 text-lg">A collection of scalable backend systems and responsive web applications.</p>
+            {/* Description Text Color Fixed */}
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg transition-colors duration-500">
+              A collection of scalable backend systems and responsive web applications.
+            </p>
           </div>
           <a 
             href="https://github.com/sameer2028" 
             target="_blank" 
             rel="noreferrer" 
-            className="group flex items-center gap-2 text-sm font-semibold text-neutral-400 hover:text-cyan-400 transition"
+            className="group flex items-center gap-2 text-sm font-semibold text-neutral-600 dark:text-neutral-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition"
           >
             View GitHub Archive
             <span className="transform transition-transform group-hover:translate-x-1">→</span>
           </a>
         </div>
 
+        {/* Projects Grid */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -98,33 +104,45 @@ function Projects() {
             <motion.div
               variants={cardVariants}
               key={i}
-              className="group flex flex-col justify-between rounded-3xl border border-neutral-800 bg-neutral-900/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/50 hover:bg-neutral-900/80"
+              // CARD BACKGROUND & BORDER FIXED
+              className="group flex flex-col justify-between rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/40 p-8 shadow-sm dark:shadow-none transition-all duration-300 hover:-translate-y-2 hover:border-cyan-500/50 hover:shadow-md"
             >
               <div>
-                <div className="text-4xl mb-6 transform transition duration-300 group-hover:scale-110 group-hover:-rotate-6 w-fit bg-neutral-950 p-4 rounded-2xl border border-neutral-800 shadow-inner">
+                {/* Emoji Box Fixed */}
+                <div className="text-4xl mb-6 transform transition duration-300 group-hover:scale-110 group-hover:-rotate-6 w-fit bg-neutral-50 dark:bg-neutral-950 p-4 rounded-2xl border border-neutral-100 dark:border-neutral-800 shadow-inner">
                   {p.emoji}
                 </div>
-                <h3 className="mb-3 text-2xl font-bold text-neutral-100">{p.title}</h3>
-                <p className="mb-8 text-neutral-400 leading-relaxed text-sm">{p.desc}</p>
+                {/* Card Title Fixed */}
+                <h3 className="mb-3 text-2xl font-bold text-neutral-900 dark:text-neutral-100 transition-colors duration-500">
+                  {p.title}
+                </h3>
+                {/* Card Description Text Fixed */}
+                <p className="mb-8 text-neutral-600 dark:text-neutral-400 leading-relaxed text-sm transition-colors duration-500">
+                  {p.desc}
+                </p>
               </div>
               
               <div className="mt-auto">
-                {/* Tech Stack Tags */}
+                {/* Tech Stack Tags Fixed */}
                 <div className="flex flex-wrap gap-2 mb-8">
                   {p.tags.map(t => (
-                    <span key={t} className="rounded-lg bg-neutral-950 border border-neutral-800 px-3 py-1.5 text-xs font-semibold text-cyan-500 shadow-sm">
+                    <span 
+                      key={t} 
+                      className="rounded-lg bg-neutral-50 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-500 shadow-sm transition-colors duration-500"
+                    >
                       {t}
                     </span>
                   ))}
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex items-center gap-4 border-t border-neutral-800/50 pt-6">
+                {/* Action Buttons Fixed */}
+                <div className="flex items-center gap-4 border-t border-neutral-100 dark:border-neutral-800/50 pt-6 transition-colors duration-500">
+                  {/* Live Demo Button */}
                   <a 
                     href={p.live} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-3 text-sm font-bold text-neutral-950 hover:bg-cyan-400 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-3 text-sm font-bold text-white dark:text-neutral-950 hover:bg-cyan-600 dark:hover:bg-cyan-400 transition-colors shadow-sm"
                   >
                     <span>Live Demo</span>
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -132,11 +150,12 @@ function Projects() {
                     </svg>
                   </a>
                   
+                  {/* GitHub Button Fixed */}
                   <a 
                     href={p.github} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 rounded-xl border border-neutral-700 bg-neutral-900/50 px-4 py-3 text-sm font-bold text-white hover:border-neutral-500 hover:bg-neutral-800 transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 rounded-xl border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900/50 px-4 py-3 text-sm font-bold text-neutral-700 dark:text-white hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors shadow-sm"
                   >
                     <span>GitHub</span>
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
