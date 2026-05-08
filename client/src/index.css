@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html {
+  /* This makes the navigation feel premium */
+  scroll-behavior: smooth;
+  scroll-padding-top: 0px; /* Adjust this to match your navbar height */
+}
+section {
+  scroll-margin-top: 50px; 
+}
