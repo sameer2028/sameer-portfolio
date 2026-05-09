@@ -18,6 +18,10 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => console.error('❌ MongoDB Connection Error:', err));
 
 // API Route: Handle Contact Form Submission
+// A simple health-check route
+app.get('/ping', (req, res) => {
+  res.status(200).send("Server is awake!");
+});
 app.post('/api/contact', async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
