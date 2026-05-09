@@ -10,14 +10,14 @@ function Projects() {
     //   github: 'https://github.com/sameer2028',
     //   live: '#' 
     // },
-    // { 
-    //   title: 'Student Management System', 
-    //   desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
-    //   tags: ['Java', 'MySQL', 'JDBC'], 
-    //   emoji: '🎓', 
-    //   github: 'https://github.com/sameer2028',
-    //   live: '#' 
-    // },
+    { 
+      title: 'Student Management System', 
+      desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
+      tags: ['Java', 'MySQL', 'JDBC'], 
+      emoji: '🎓', 
+      github: 'https://github.com/sameer2028/student-management-system/',
+      live: 'https://github.com/sameer2028/student-management-system/' 
+    },
     { 
       title: 'EMI Calculator', 
       desc: 'A dynamic financial utility tool that calculates Equated Monthly Installments for loans. Features real-time interest breakdowns and amortization schedules.', 
