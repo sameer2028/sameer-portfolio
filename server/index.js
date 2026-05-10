@@ -20,7 +20,12 @@ mongoose.connect(process.env.MONGO_URI)
 // API Route: Handle Contact Form Submission
 // A simple health-check route
 app.get('/ping', (req, res) => {
-  res.status(200).send("Server is awake!");
+  try {
+    res.status(200).send("pong");
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
+  }
 });
 app.post('/api/contact', async (req, res) => {
   try {
