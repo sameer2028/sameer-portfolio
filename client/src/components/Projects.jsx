@@ -17,7 +17,7 @@ function Projects() {
       tags: ['JavaScript', 'React', 'Tailwind CSS'], 
       emoji: '💳', 
       github: 'https://github.com/sameer2028/EMI-calculator',
-      live: 'https://sameer2028.github.io/EMI-calculator/' 
+      live: 'https://emi-calc-36532b.gitlab.io/' 
     },
      { 
       title: 'Student Management System', 
