@@ -2,22 +2,15 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   const projects = [
-    // { 
-    //   title: 'URL Shortening Service', 
-    //   desc: 'A high-performance URL shortener built for system reliability. Features optimized database indexing and custom REST APIs for rapid, scalable data retrieval.', 
-    //   tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose'], 
-    //   emoji: '🔗', 
-    //   github: 'https://github.com/sameer2028',
-    //   live: '#' 
-    // },
     { 
-      title: 'Student Management System', 
-      desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
-      tags: ['Java', 'MySQL', 'JDBC'], 
-      emoji: '🎓', 
-      github: 'https://github.com/sameer2028/student-management-system/',
-      live: 'https://github.com/sameer2028/student-management-system/' 
+      title: 'URL Shortening Service', 
+      desc: 'A high-performance URL shortener built for system reliability. Features optimized database indexing and custom REST APIs for rapid, scalable data retrieval.', 
+      tags: ['Node.js', 'Express', 'MongoDB', 'Mongoose'], 
+      emoji: '🔗', 
+      github: 'https://github.com/sameer2028/url-shortner-mern',
+      live: 'https://url-shortner-mern-zeta.vercel.app/' 
     },
+   
     { 
       title: 'EMI Calculator', 
       desc: 'A dynamic financial utility tool that calculates Equated Monthly Installments for loans. Features real-time interest breakdowns and amortization schedules.', 
@@ -25,6 +18,14 @@ function Projects() {
       emoji: '💳', 
       github: 'https://github.com/sameer2028/EMI-calculator',
       live: 'https://sameer2028.github.io/EMI-calculator/' 
+    },
+     { 
+      title: 'Student Management System', 
+      desc: 'A robust relational database application designed to securely manage, query, and update student academic records and institutional data.', 
+      tags: ['Java', 'MySQL', 'JDBC'], 
+      emoji: '🎓', 
+      github: 'https://github.com/sameer2028/student-management-system/',
+      live: 'https://github.com/sameer2028/student-management-system/' 
     },
     { 
       title: 'Leetmetric', 
