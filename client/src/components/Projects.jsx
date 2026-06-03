@@ -2,6 +2,14 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   const projects = [
+    {
+      title: 'Grievance Portal',
+      desc: 'A comprehensive platform designed to streamline, track, and manage user complaints and feedback efficiently.', // Update with your actual description
+      tags: ['React', 'Node.js', 'MongoDB', 'Express'], // Update with the actual tech stack you used
+      emoji: '📝', // Feel free to swap this for another relevant emoji
+      github: 'https://github.com/sameer2028/grievance-portal', // Add your actual GitHub repo link
+      live: 'https://grievance-portal-jade.vercel.app/' // Add your live deployment link
+    },
     { 
       title: 'URL Shortening Service', 
       desc: 'A high-performance URL shortener built for system reliability. Features optimized database indexing and custom REST APIs for rapid, scalable data retrieval.', 
