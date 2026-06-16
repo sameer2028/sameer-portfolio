@@ -30,6 +30,11 @@ const messageSchema = new mongoose.Schema({
 // Force the collection name to be 'messages'
 const Message = mongoose.model('Message', messageSchema, 'messages');
 
+// Health-check route for UptimeRobot
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
+});
+
 // API Route: Handle Contact Form Submission
 app.post('/api/contact', async (req, res) => {
   try {
