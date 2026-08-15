@@ -3,12 +3,28 @@ import { motion } from 'framer-motion'
 function Projects() {
   const projects = [
     {
-      title: 'Grievance Portal',
-      desc: 'A comprehensive platform designed to streamline, track, and manage user complaints and feedback efficiently.', // Update with your actual description
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'], // Update with the actual tech stack you used
-      emoji: '📝', // Feel free to swap this for another relevant emoji
-      github: 'https://github.com/sameer2028/grievance-portal', // Add your actual GitHub repo link
-      live: 'https://grievance-portal-jade.vercel.app/' // Add your live deployment link
+      title: 'Rakshak AI Intelligence Grid',
+      desc: 'An AI-powered digital public safety platform connecting citizens, law enforcement, banks, and telecom to proactively detect scams, unravel fraud rings using Graph ML, detect counterfeit currency via Computer Vision, and map crime hotspots.',
+      tags: ['FastAPI', 'React', 'PyTorch', 'MongoDB', 'Graph ML', 'OpenCV'],
+      emoji: '🛡️',
+      github: 'https://github.com/sameer2028/rakshak-AI',
+      live: 'https://rakshak-ai-peach.vercel.app/reviewer'
+    },
+    {
+      title: 'Jan Samadhan',
+      desc: 'An AI-powered public e-governance platform featuring FastAPI ML complaint routing, NLP sentiment & urgency detection, district heatmap analytics, and multi-agency RBAC dashboards.',
+      tags: ['React', 'FastAPI', 'Node.js', 'MongoDB', 'Python', 'ML / NLP'],
+      emoji: '🏛️',
+      github: 'https://github.com/sameer2028/grievance-portal',
+      live: 'https://jansamadhan-up.vercel.app/'
+    },
+    {
+      title: 'QuickServe',
+      desc: 'A full-stack restaurant pre-ordering and management ecosystem with real-time Socket.io order tracking, automated notification triggers, and interactive admin analytics.',
+      tags: ['React 19', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
+      emoji: '🍔',
+      github: 'https://github.com/sameer2028/quickserve',
+      live: 'https://quickserve-ip3s.vercel.app/'
     },
     { 
       title: 'URL Shortening Service', 
@@ -35,14 +51,14 @@ function Projects() {
       github: 'https://github.com/sameer2028/student-management-system/',
       live: 'https://github.com/sameer2028/student-management-system/' 
     },
-    { 
-      title: 'Leetmetric', 
-      desc: 'A tool to track and visualize LeetCode problem-solving statistics and progress over time.', 
-      tags: ['JavaScript', 'API', 'Data Viz'], 
-      emoji: '📊', 
-      github: 'https://github.com/sameer2028/LeetMetric',
-      live: 'https://sameer2028.github.io/LeetMetric/' 
-    },
+    // { 
+    //   title: 'Leetmetric', 
+    //   desc: 'A tool to track and visualize LeetCode problem-solving statistics and progress over time.', 
+    //   tags: ['JavaScript', 'API', 'Data Viz'], 
+    //   emoji: '📊', 
+    //   github: 'https://github.com/sameer2028/LeetMetric',
+    //   live: 'https://sameer2028.github.io/LeetMetric/' 
+    // },
     // { 
     //   title: 'Currency Converter', 
     //   desc: 'Real-time currency conversion app using live exchange rate APIs with a polished interface.', 
@@ -51,14 +67,14 @@ function Projects() {
     //   github: 'https://github.com/sameer2028',
     //   live: '#' 
     // },
-    { 
-      title: 'Calculator', 
-      desc: 'A clean, functional calculator built with vanilla JavaScript featuring smooth UI interactions.', 
-      tags: ['HTML', 'CSS', 'JS'], 
-      emoji: '🧮', 
-      github: 'https://github.com/sameer2028/Calculator',
-      live: ' https://sameer2028.github.io/Calculator/' 
-    }
+    // { 
+    //   title: 'Calculator', 
+    //   desc: 'A clean, functional calculator built with vanilla JavaScript featuring smooth UI interactions.', 
+    //   tags: ['HTML', 'CSS', 'JS'], 
+    //   emoji: '🧮', 
+    //   github: 'https://github.com/sameer2028/Calculator',
+    //   live: ' https://sameer2028.github.io/Calculator/' 
+    // }
   ];
 
   const containerVariants = {
@@ -76,7 +92,7 @@ function Projects() {
 
   return (
     // Section ka tag App.jsx ke global styling par chalega, isliye koi color classes nahi hain
-    <section id="portfolio" className="px-6 py-25">
+    <section id="portfolio" className="px-6 py-16">
       <div className="mx-auto max-w-7xl">
         
         {/* Header Section */}

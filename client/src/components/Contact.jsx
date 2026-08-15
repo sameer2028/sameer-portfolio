@@ -66,7 +66,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="px-6 py-24 flex items-center">
+    <section id="contact" className="px-6 py-16">
       <Toaster position="bottom-right" />
       
       <div className="mx-auto max-w-5xl w-full">

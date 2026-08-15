@@ -65,10 +65,10 @@ function About() {
             </div>
             <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-2 transition-colors duration-500">Education</h3>
             <p className="font-medium text-cyan-600 dark:text-cyan-400 transition-colors">B.Tech (CSE)</p>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-6 transition-colors duration-500">MMMUT, Gorakhpur</p>
+            <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-6 transition-colors duration-500">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
             <div className="mt-auto flex justify-between items-end border-t border-neutral-200 dark:border-neutral-800 pt-5 transition-colors duration-500">
               <span className="text-xs uppercase tracking-widest text-neutral-500">Current CGPA</span>
-              <span className="text-2xl font-black text-neutral-900 dark:text-white transition-colors duration-500">8.87</span>
+              <span className="text-2xl font-black text-neutral-900 dark:text-white transition-colors duration-500">8.95</span>
             </div>
           </div>
 
@@ -76,10 +76,10 @@ function About() {
           <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/40 p-8 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors flex flex-col shadow-sm dark:shadow-none duration-500">
             <h3 className="text-xl font-bold text-neutral-900 dark:text-white mb-3 transition-colors duration-500">Problem Solving</h3>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6 leading-relaxed transition-colors duration-500">
-              Active competitor on platforms like LeetCode and CodeChef, focusing heavily on algorithms and core data structures.
+              Active competitor on platforms like LeetCode, GeeksforGeeks, Codeforces & CodeChef, focusing heavily on algorithms and core data structures.
             </p>
             <div className="mt-auto flex items-baseline gap-2 border-t border-neutral-200 dark:border-neutral-800 pt-5 transition-colors duration-500">
-              <span className="text-5xl font-black text-cyan-600 dark:text-cyan-500 transition-colors">500<span className="text-3xl">+</span></span>
+              <span className="text-5xl font-black text-cyan-600 dark:text-cyan-500 transition-colors">600<span className="text-3xl">+</span></span>
               <span className="text-xs uppercase tracking-widest text-neutral-500">Solved</span>
             </div>
           </div>

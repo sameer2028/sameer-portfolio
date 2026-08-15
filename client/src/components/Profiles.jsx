@@ -16,9 +16,9 @@ function Profiles() {
     },
     { 
       name: 'LeetCode', 
-      username: 'sameer_2028',
+      username: 'sameer2028',
       desc: '250+ Data Structures & Algorithms solved',
-      url: 'https://leetcode.com/sameer_2028', 
+      url: 'https://leetcode.com/u/sameer2028/', 
       hoverColor: 'group-hover:border-yellow-500 group-hover:shadow-[0_0_15px_rgba(234,179,8,0.1)]',
       icon: (
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-9 h-9 mb-6 text-neutral-400 dark:text-neutral-500 group-hover:text-yellow-500 transition-colors duration-300">
@@ -54,7 +54,7 @@ function Profiles() {
 
   return (
     // Section inherited App.jsx colors, no classes needed here
-    <section id="profiles" className="px-6 py-24 flex items-center min-h-[80vh]">
+    <section id="profiles" className="px-6 py-16">
       <div className="mx-auto max-w-6xl w-full">
         
         {/* Header Title & Description updated for Light/Dark mode */}
